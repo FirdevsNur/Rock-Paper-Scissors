@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    min-height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    margin: 30px;
+    font-size: 30px;
+}
+.choices{
+    display: flex;
+}
+.playerChoice {
+    transform: rotate(90deg);
+    margin-right: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+.pcChoice{
+    transform: rotate(270deg) scaleX(-1);
+    margin-left: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+.options{
+    display: flex;
+    margin: 40px;
+}
+.rpsOption{
+    margin: 20px;
+    opacity: 0.7;
+    border: none;
+}
+.rpsOption:hover{
+    opacity: 1;
+}
+.rpsOption.active{
+    margin: 20px;
+    opacity: 1;
+    border: none;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+}
+.playerChoice.active{
+    transform: rotate(45deg);
+    margin-right: 40px;
+}
+.pcChoice.active{
+    transform: rotate(315deg) scaleX(-1);
+    margin-left: 40px;
+}
